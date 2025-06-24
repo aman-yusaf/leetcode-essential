@@ -1,4 +1,3 @@
-# %%
 from typing import List
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
@@ -6,4 +5,3 @@ class Solution:
         # Simple approach as set doesn't store duplicate elements
         return len(nums) != len(set(nums))
 
-# %%
