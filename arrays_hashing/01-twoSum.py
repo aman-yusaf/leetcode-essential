@@ -1,12 +1,17 @@
-# %%
+from typing import List
+
 class Solution:
-    def two_Sum(self, nums, target):
-        """ returns the indices of the 2 numbers such that they add upto target """
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        """
+        Returns the indices of the two numbers such that they add up to the target.
+        """
         hashmap = {}
         for index, num in enumerate(nums):
-            compliment = target - num
-            if compliment in hashmap:
-                return [hashmap[compliment], index]
+            complement = target - num
+            if complement in hashmap:
+                return [hashmap[complement], index]
             hashmap[num] = index
 
-# %%
+        # Optional: fallback return for robustness
+        return []
+
