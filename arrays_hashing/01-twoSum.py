@@ -12,6 +12,6 @@ class Solution:
                 return [hashmap[complement], index]
             hashmap[num] = index
 
-        # Optional: fallback return for robustness
+        # when no favorable solutions found
         return []
 
