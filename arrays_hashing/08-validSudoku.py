@@ -42,7 +42,7 @@ class Solution:
             if len(col) != len(set(col)):
                 return False
             col.clear()
-
+ 
         return True
 
 
