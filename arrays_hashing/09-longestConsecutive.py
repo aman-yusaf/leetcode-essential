@@ -8,7 +8,7 @@ class Solution:
         longest = 0
         
         for num in num_Set:
-            # Start only if it's the beginning of a consecutive sequence.
+            # Start only if it's the beginning of a consecutive sequence. 
             if num-1 not in num_Set:
                 length = 1
                 que = num
